@@ -1,0 +1,17 @@
+{
+  "kind": "evm_project",
+  "token": {
+    "contract": "LaunchToken",
+    "name": "HS XWesXkAAMSB0",
+    "symbol": "HX",
+    "decimals": 18
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "notes": "Token-only launch of src/LaunchToken.sol:LaunchToken. Its nonpayable, zero-argument constructor mints 1,000,000,000 HX with 18 decimals to the deploying factory. There are no owner powers, later minting, pause, upgrade, or transfer taxes, and no initialization calls or application contracts. The approved workflow requires Ethereum mainnet only and 88% of total supply for the native ETH launch pool, with the standard IMD distribution and trading fees; services must enforce these requirements through deployment configuration and pinned policy. These notes do not set policy or authorize deployment. The protocol factory supplies liquidity, MerkleDistributor, and the initialization-only pool guard. The fee field 3000 is the admission parameter; live trading fees come from the network configuration. initialPrice is decimal sqrtPriceX96 for legacy policies; the pinned policy determines the effective opening price. Source publication, signed artifact linkage, admission, deployment, and the IPFS frontend are subsequent service and workflow steps."
+}
